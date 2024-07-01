@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Fintech Project</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/styles.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container d-flex flex-column justify-content-center align-items-center vh-100">
+        <h1 class="mb-4">Dashboard</h1>
+        <div class="row w-100">
+            <div class="col-md-6 d-flex flex-column align-items-center">
+                <h2>Adicionar Entrada</h2>
+                <form id="addIncomeForm" class="w-100" style="max-width: 400px;">
+                    <div class="form-group">
+                        <label for="incomeAmount">Valor:</label>
+                        <input type="number" class="form-control" id="incomeAmount" placeholder="Enter amount" required>
+                    </div>
+                    <button type="submit" class="btn btn-success w-100">Adicionar Entrada</button>
+                </form>
+            </div>
+            <div class="col-md-6 d-flex flex-column align-items-center">
+                <h2>Adicionar Saída</h2>
+                <form id="addExpenseForm" class="w-100" style="max-width: 400px;">
+                    <div class="form-group">
+                        <label for="expenseAmount">Valor:</label>
+                        <input type="number" class="form-control" id="expenseAmount" placeholder="Enter amount" required>
+                    </div>
+                    <button type="submit" class="btn btn-danger w-100">Adicionar Saída</button>
+                </form>
+            </div>
+        </div>
+        <div class="row mt-4 w-100">
+            <div class="col-12 d-flex flex-column align-items-center">
+                <h2>Saldo Total</h2>
+                <h3 id="totalBalance">$0.00</h3>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="../js/scripts.js"></script>
+</body>
+</html>
